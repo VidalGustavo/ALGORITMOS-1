@@ -9,7 +9,7 @@ public class ViajeConTipo {
     public int cantEstaciones;
     private TipoViaje tipoViaje;
 
-    public ViajeConTipo (int cantVagones, int cantPasajeros, String destino, String origen, double distancia, int cantEstaciones) {
+    public ViajeConTipo (int cantVagones, int cantPasajeros, String destino, String origen, double distancia, int cantEstaciones, TipoViaje tipoViaje) {
 
         this.cantPasajeros = cantPasajeros;
         this.cantVagones = cantVagones;
@@ -17,6 +17,7 @@ public class ViajeConTipo {
         this.origen = origen;
         this.distancia = distancia;
         this.cantEstaciones = cantEstaciones;
+        this.tipoViaje = tipoViaje;
     };
 
     public double tiempoDeDemora() {
