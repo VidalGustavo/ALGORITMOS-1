@@ -25,11 +25,14 @@ public class ViajeConTipo {
             double cantEstacionesAsDouble = this.cantEstaciones;
             double cantPasajerosAsDouble = this.cantPasajeros;
             return this.distancia * this.cantEstaciones/2+(cantEstacionesAsDouble+cantPasajerosAsDouble)/10;
+
         } else if (this.tipoViaje.getTipoViaje().equals("Electrico")) {
             double cantEstacionesAsDouble = this.cantEstaciones;
             return this.distancia*cantEstacionesAsDouble/2;
+            
         } else if (this.tipoViaje.getTipoViaje().equals("Alta Velocidad")) {
             return this.distancia / 10;
+            
         } else {
             throw new IllegalArgumentException("Tipo de viaje no válido."); //hace falta???
         }
