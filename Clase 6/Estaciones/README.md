@@ -1,13 +1,13 @@
 ## Ejercicio de la Guia de Herencia:
 ### Estaciones: Viajes y Tipos de viaje.
 
-La clase App, princiapal, crea distintos viajes y les calcula su tiempo de viaje.
+La clase App, principal, crea distintos viajes y les calcula su tiempo de viaje.
 Hay 2 paquetes, cada uno para cada punto del ejecicio
 viaje y tipo viaje.
 
 
 Dejo aca un diagrama de una solucion del ej B (que no implementamos), esta se hizo con los principios Strategy
-(pero termina especializando en cada tipo, asi que no se si es lo que se pedia realmente.):
+(pero termina especializando en cada tipo, asi que no sé si es lo que se pedia realmente.):
 
 ```mermaid
 ---
@@ -34,4 +34,7 @@ classDiagram
     TipoViaje --> ViajeElectrico
     TipoViaje --> ViajeDiesel
     TipoViaje --> ViajeAltaVelocida
-```
+
+
+**POLIMORFISMO** 
+El programa presenta un solo tipo de Polimorfismo: Sobrecarga. Según el tipo de tren el método tiempoDeDemora() cambia su formula. 
