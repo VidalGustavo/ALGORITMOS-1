@@ -65,6 +65,7 @@ public class InterfazUsuario {
                 break; // Necesario?
             default:
                 System.out.println("Opción no válida. Intente de nuevo.");
+                mostrarMenuPrincipal();
         }
     }
 
