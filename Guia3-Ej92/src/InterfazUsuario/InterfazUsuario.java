@@ -26,6 +26,7 @@ public class InterfazUsuario {
 
     private String getInput() {
         String input = this.scanner.nextLine();
+        System.out.println(input);
         return input;
     }
    
